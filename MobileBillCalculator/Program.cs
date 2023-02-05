@@ -32,15 +32,16 @@ static decimal BillCalculator(DateTime startTime, DateTime endTime)
 
     }
 
-    return totalBill;
+    return totalBill/100;
 }
-//DateTime startTime = DateTime.Parse(" 2019-08-31 08:59:13 am");
-//DateTime endTime = DateTime.Parse("2019-08-31 09:00:39 am");
+DateTime startTime = DateTime.Parse(" 2019-08-31 08:59:13 am");
+DateTime endTime = DateTime.Parse("2019-08-31 09:00:39 am");
 //DateTime startTime = DateTime.Parse(" 2019-09-29 10:59:55 pm");
 //DateTime endTime = DateTime.Parse("2019-09-29 11:00:09 pm");
-DateTime startTime = DateTime.Parse(" 2019-09-29 11:59:47 pm");
-DateTime endTime = DateTime.Parse("2019-09-30 12:00:15 am");
+//DateTime startTime = DateTime.Parse(" 2019-09-29 11:59:47 pm");
+//DateTime endTime = DateTime.Parse("2019-09-30 12:00:15 am");
 var bill = BillCalculator(startTime, endTime);
-Console.WriteLine(bill);
+Console.WriteLine(bill+" taka");
+Console.ReadLine();
 
 
